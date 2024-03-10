@@ -44,7 +44,7 @@ public class PetStoreData {
 	}
 @Data
 @NoArgsConstructor
-static class PetStoreEmployee {
+public static class PetStoreEmployee {
 	private Long employeeId;
 	private String employeeFirstName;
 	private String employeeLastName;
@@ -52,7 +52,7 @@ static class PetStoreEmployee {
 	private String employeeJobTitle;
 	
 	public PetStoreEmployee(Employee employee) {
-		employeeId = employee.getEmplyeeId();
+		employeeId = employee.getEmployeeId();
 		employeeFirstName = employee.getEmployeeFirstName();
 		employeeLastName = employee.getEmployeeLastName();
 		employeePhone = employee.getEmployeePhone();
@@ -61,7 +61,7 @@ static class PetStoreEmployee {
 }
 @Data
 @NoArgsConstructor
-static class PetStoreCustomer {
+public static class PetStoreCustomer {
 	
 	private Long customerId;
 	private String customerFirstName;
